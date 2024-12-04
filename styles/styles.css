@@ -1,113 +1,179 @@
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-header{
+
+/* Encabezado */
+header {
     width: 100%;
     height: 5rem;
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: #0066cc; /* Azul moderno */
+    color: white;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
+/* Cuerpo */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5f5f5; /* Fondo suave */
 }
 
-.search-word{
+/* Sección de búsqueda */
+.search-word {
     width: 70%;
 }
 
-.text-1{
+.text-1 {
     padding-bottom: 8px;
+    color: #333;
 }
 
-.bar-search{
+.bar-search {
     width: 10rem;
     height: 2rem;
     margin-top: 1rem;
-    margin-bottom: 1rem; 
-    margin-right: 2px;  
+    margin-bottom: 1rem;
+    margin-right: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
-.btn-search{
+.btn-search {
     width: 4rem;
     height: 2rem;
+    background-color: #28a745; /* Verde atractivo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.translation{
+.btn-search:hover {
+    background-color: #218838; /* Verde más oscuro */
+}
+
+/* Traducción */
+.translation {
     width: 100%;
-    height: 10rem;    
-    background-color: beige;
+    height: 10rem;
+    background-color: #e6f7ff; /* Azul pastel */
     border-radius: 10px;
     margin-bottom: 1rem;
 }
 
-.traslation>h2{
+.translation>h2 {
     padding-top: 5px;
     display: flex;
     justify-content: center;
+    color: #0056b3; /* Azul fuerte */
 }
 
-.description{
+/* Descripción */
+.description {
     width: 100%;
-    height: 10rem;    
-    background-color: beige;
+    height: 10rem;
+    background-color: #fff3e6; /* Naranja pastel */
     border-radius: 10px;
 }
 
-.description>h2{
+.description>h2 {
     padding-top: 5px;
     display: flex;
     justify-content: center;
+    color: #b35900; /* Naranja fuerte */
 }
 
-.deployment-words{
+/* Área de despliegue */
+.deployment-words {
     width: 93%;
     height: 68%;
     margin-top: 5px;
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 10px;
-
+    padding: 10px;
+    background-color: #ffffff;
 }
 
-.container{
+/* Contenedor */
+.container {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.input-add {    width: 10rem;
-height: 2rem;
-margin-top: 1px;
-margin-bottom: 10px; 
-margin-right: 2px;  
-}
-.add-word-section{
-    margin-top: 1rem;
 
+/* Inputs y botones */
+.input-add {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
 }
-.sort-btns{
+
+.add-word-section {
+    margin-top: 1rem;
+}
+
+.sort-btns {
     margin-bottom: 1rem;
 }
-.add-btn{
-    width: 4rem;
-    height: 2rem;}
- #sort-btns{
+
+.add-btn {
     width: 4rem;
     height: 2rem;
-    }
-    #sort-btn{
-        width: 12rem;
-        height: 2rem;
-        margin-bottom: 1rem;
-        }
+    background-color: #007bff; /* Azul vivo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+#sort-btns {
+    width: 4rem;
+    height: 2rem;
+    background-color: #ffc107; /* Amarillo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sort-btns:hover {
+    background-color: #e0a800; /* Amarillo más oscuro */
+}
+
+#sort-btn {
+    width: 12rem;
+    height: 2rem;
+    background-color: #17a2b8; /* Celeste */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sort-btn:hover {
+    background-color: #138496; /* Celeste más oscuro */
+}
