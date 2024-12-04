@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor CS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>TRADUCTOR CS</h1>
+  </header>
+
+  <main>
+    <div class="container">
+    <div class="search-word">
+    <section class="search-word">
+      <h4 class="text-1">¿Escribirás en?</h4>
+      <div class="search">
+        <input type="radio" id="en-es" name="language" value="en-es" checked>
+        <label for="en-es">Inglés - Español</label>
+        <br>
+        <input type="radio" id="es-en" name="language" value="es-en">
+        <label for="es-en">Español - Inglés</label>
+        <br>
+        <input class="bar-search" type="text" id="word-input" placeholder="Ingresa la palabra">
+ <button id="translate-btn" class="btn-search">Buscar</button>
+      </div>
+      <div class="translation">
+        <h2>TRADUCCIÓN</h2>
+        <h3 class="noneditablefield"  id="result-translation" ></h3>
+      </div>
+      <div class="description">
+        <h2>DESCRIPCIÓN</h2>
+       <h3 class="noneditablefield"  id="result-description" ></h3>
+      </div>
+
+    </section>
+    </div>
+     <div class="categories"> 
+    <section class="categories">
+      <h2>CATEGORÍAS</h2>
+      <input type="radio" id="all" name="category" value="all" checked>
+      <label for="all">Todas</label>
+      <br>
+      <input type="radio" id="animals" name="category" value="animals">
+      <label for="animals">Animales</label>
+      <br>
+      <input type="radio" id="fruits" name="category" value="fruits">
+      <label for="fruits">Frutas</label>
+      <br>
+      <input type="radio" id="colors" name="category" value="colors">
+      <label for="colors">Colores</label>
+      <br>
+      <input type="radio" id="physical" name="category" value="physical_descriptions">
+      <label for="physical">Descripciones físicas</label>
+      <br>
+      <input type="radio" id="skills" name="category" value="skills">
+      <label for="skills">Habilidades</label>
+      <br>
+      <input type="radio" id="verbs" name="category" value="verbs">
+      <label for="verbs">Verbos</label>
+    </section>
+
+<br>
+    <section class="container-words">
+      <details>
+        <summary class="deployment-words">LISTADO DE PALABRAS</summary>
+        <br>
+        <button id="sort-btn">Organizar alfabéticamente</button>
+        <button id="sort-btns">actualizar</button>
+       
+        <ul id="word-list" class="words"></ul>
+      </details>
+    </section>
+
+ 
+    
+
+ 
+    <section class="add-word-section">
+      <h2>Añadir nueva palabra</h2>
+      <form id="add-word-form">
+        <input class="input-add" type="text" id="new-word-en" placeholder="Palabra en inglés">
+        <input class="input-add" type="text" id="new-word-es" placeholder="Traducción en español">
+        <input class="input-add" type="text" id="new-word-description" placeholder="Descripcion">
+         <select  class="input-add" id="new-word-category">
+          <option value="animals">Animales</option>
+          <option value="fruits">Frutas</option>
+          <option value="colors">Colores</option>
+          <option value="physical_descriptions">Descripciones físicas</option>
+          <option value="skills">Habilidades</option>
+          <option value="verbs">Verbos</option>
+        </select>
+        <br>
+        <button type="submit" class="add-btn">Añadir</button>
+      </form>
+    </section>
+  </main>
+</div>
+</div>
+
+  <script src="./dictionary.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
